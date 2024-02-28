@@ -1,17 +1,16 @@
-# Welcome to MkDocs
+# SEM学习笔记
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+用来学习SEM的课本知识
 
-## Commands
+## 参考书
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* Scanning Electron Microscopy and X-Ray Microanalysis - THIRD EDITION - Goldstein
+* 扫描电镜与能谱分析技术-张大同
 
-## Project layout
+## 更新计划
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- 暂定每周二、周六
+- 上次更新时间：2024-02-28
+- 预计下次更新：2024-03-02
+- 当前进度：项目介绍
+
