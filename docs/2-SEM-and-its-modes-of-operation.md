@@ -7,23 +7,16 @@
 ![image-20240306155303686](2-SEM-and-its-modes-of-operation-img/image-20240306155303686.png)
 
 - 镜筒electron column
-
-  - Electron Gun电子枪
-  
-    - Filament灯丝
-
-
-  - Scan Coil扫描线圈
-  - Electron Lenses电磁透镜
-  - Specimen Stage样品台
-  - Electron Detector探测器
-
-
+	- Electron Gun电子枪
+		- Filament灯丝
+	- Scan Coil扫描线圈
+	- Electron Lenses电磁透镜
+	- Specimen Stage样品台
+	- Electron Detector探测器
 - 控制台control console
-
-  - 控制按钮
-  - 显示器
-  - 相机
+	- 控制按钮
+	- 显示器
+	- 相机
 
 #### 产生小电子束
 
@@ -69,7 +62,8 @@ SEM提供多种成像模式，以适应不同信息。主要的四个参数：
 - 束斑会聚角 $\alpha_p$：对应焦深模式depth-of-focus mode
 - 加速电压 $V_0$：对应低压模式low-voltage mode
 
-<img src="2-SEM-and-its-modes-of-operation-img/image-20240306172525431.png" alt="image-20240306172525431" style="zoom:50%;" />
+![image-20240306172525431](2-SEM-and-its-modes-of-operation-img/image-20240306172525431.png){width=100}
+
 
 #### 分辨率模式
 
