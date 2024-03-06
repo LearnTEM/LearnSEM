@@ -11,10 +11,14 @@
   - Electron Gun电子枪
   
     - Filament灯丝
+
+
   - Scan Coil扫描线圈
   - Electron Lenses电磁透镜
   - Specimen Stage样品台
   - Electron Detector探测器
+
+
 - 控制台control console
 
   - 控制按钮
@@ -32,7 +36,7 @@
 ![image-20240306165011622](2-SEM-and-its-modes-of-operation-img/image-20240306165011622.png)
 
 > 偏转控制系统。扫描生成器生成扫描的栅格，分别交给扫描线圈及显示器CRT。放大系统控制偏转线圈电流以控制放大倍数；探测器产生的信号经放大后交给CRT电子枪，控制发射强度。
->
+> 
 > （这东西现在应该已经被数字化了吧）
 
 ![image-20240306165354524](2-SEM-and-its-modes-of-operation-img/image-20240306165354524.png)
