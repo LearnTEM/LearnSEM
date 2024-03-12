@@ -23,3 +23,10 @@ plugins:
       lang:
         - zh
         - en
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+      locale: zh
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
