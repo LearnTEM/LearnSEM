@@ -1,0 +1,1744 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../1-introduction/">
+      
+      
+        <link rel="next" href="../3-Electron-beam-specimen-interaction/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+    
+    
+      
+        <title>扫描电镜及其工作模式 - LearnSEM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LearnSEM" class="md-header__button md-logo" aria-label="LearnSEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LearnSEM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              扫描电镜及其工作模式
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LearnTEM/LearnSEM.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LearnTEM/LearnSEM
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LearnSEM" class="md-nav__button md-logo" aria-label="LearnSEM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    LearnSEM
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LearnTEM/LearnSEM.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LearnTEM/LearnSEM
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEM学习笔记-项目介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    引言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    扫描电镜及其工作模式
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    扫描电镜及其工作模式
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sem" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM工作原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM工作原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      各部件功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="各部件功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      产生小电子束
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      偏转放大控制系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      探测器收集信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      相机与计算机系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作控制
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM成像模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM成像模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      分辨率模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      高电流模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      焦深模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      低电压模式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么需要了解电子光学
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子枪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      发夹式钨电子枪
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发夹式钨电子枪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filament" class="md-nav__link">
+    <span class="md-ellipsis">
+      灯丝Filament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      控制极 Grid Cap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anode" class="md-nav__link">
+    <span class="md-ellipsis">
+      阳极 Anode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      发射电流与电子束流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪的控制
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪的性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子枪的性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      发射电流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      亮度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      寿命
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      光源大小、能量分布、稳定性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      提升电子枪性能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab6" class="md-nav__link">
+    <span class="md-ellipsis">
+      LaB6电子枪
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      场发射枪
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      电磁透镜系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电磁透镜系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      缩小电子束尺寸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM中的透镜系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM中的透镜系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#condenser-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      会聚镜Condenser Lenses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      物镜Objective Lenses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      透镜控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      光阑尺寸的影响
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作距离的影响
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      聚光镜电流的影响
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      束斑大小与束斑电流的关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      透镜像差
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜像差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      球差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      光阑衍射效应
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      色差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      像散
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      束斑尺寸与电流（考虑像差）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      不同操作模式下的调节
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-Electron-beam-specimen-interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    电子束-样品相互作用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-Image-formation-and-interpretation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEM成像
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-Special-topic-in-SEM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SEM中的一些特殊情形
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sem" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM工作原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM工作原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      各部件功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="各部件功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      产生小电子束
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      偏转放大控制系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      探测器收集信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      相机与计算机系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作控制
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sem_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM成像模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM成像模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      分辨率模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      高电流模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      焦深模式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      低电压模式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      为什么需要了解电子光学
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子枪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      发夹式钨电子枪
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="发夹式钨电子枪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filament" class="md-nav__link">
+    <span class="md-ellipsis">
+      灯丝Filament
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid-cap" class="md-nav__link">
+    <span class="md-ellipsis">
+      控制极 Grid Cap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anode" class="md-nav__link">
+    <span class="md-ellipsis">
+      阳极 Anode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      发射电流与电子束流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪的控制
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      电子枪的性质
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电子枪的性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      发射电流
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      亮度
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      寿命
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      光源大小、能量分布、稳定性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      提升电子枪性能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lab6" class="md-nav__link">
+    <span class="md-ellipsis">
+      LaB6电子枪
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      场发射枪
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      电磁透镜系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="电磁透镜系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      缩小电子束尺寸
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sem_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      SEM中的透镜系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SEM中的透镜系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#condenser-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      会聚镜Condenser Lenses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#objective-lenses" class="md-nav__link">
+    <span class="md-ellipsis">
+      物镜Objective Lenses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      透镜控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      光阑尺寸的影响
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作距离的影响
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      聚光镜电流的影响
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      束斑大小与束斑电流的关系
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      透镜像差
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="透镜像差">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      球差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      光阑衍射效应
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      色差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      像散
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      束斑尺寸与电流（考虑像差）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      不同操作模式下的调节
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">扫描电镜及其工作模式</h1>
+<h2 id="sem">SEM工作原理</h2>
+<h3 id="_2">各部件功能</h3>
+<p><img alt="image-20240306155303686" src="../2-SEM-and-its-modes-of-operation-img/image-20240306155303686.png" /></p>
+<ul>
+<li>镜筒electron column<ul>
+<li>Electron Gun电子枪<ul>
+<li>Filament灯丝</li>
+</ul>
+</li>
+<li>Scan Coil扫描线圈</li>
+<li>Electron Lenses电磁透镜</li>
+<li>Specimen Stage样品台</li>
+<li>Electron Detector探测器</li>
+</ul>
+</li>
+<li>控制台control console<ul>
+<li>控制按钮</li>
+<li>显示器</li>
+<li>相机</li>
+</ul>
+</li>
+</ul>
+<h4 id="_3">产生小电子束</h4>
+<p>电子枪产生电子，加速到0.1~30keV。电磁透镜将束斑会聚到10 nm内的小尺寸。电子束最终作用到样品表面1微米深度内，产生信号。</p>
+<h4 id="_4">偏转放大控制系统</h4>
+<p>扫描图像由一个个点构成，系统通过偏转线圈操控电子束在样品表面逐行扫描，与显示器CRT上的扫描同步。放大倍数为二者扫描步长之比，需要增大放大倍数时只需降低偏转线圈电流即可。</p>
+<p><img alt="image-20240306165011622" src="../2-SEM-and-its-modes-of-operation-img/image-20240306165011622.png" /></p>
+<blockquote>
+<p>偏转控制系统。扫描生成器生成扫描的栅格，分别交给扫描线圈及显示器CRT。放大系统控制偏转线圈电流以控制放大倍数；探测器产生的信号经放大后交给CRT电子枪，控制发射强度。</p>
+<p>（这东西现在应该已经被数字化了吧）</p>
+</blockquote>
+<p><img alt="image-20240306165354524" src="../2-SEM-and-its-modes-of-operation-img/image-20240306165354524.png" /></p>
+<blockquote>
+<p>扫描线圈的工作原理：第一组偏转线圈令电子束偏离光轴，第二组再令电子束偏回来，与光轴重新相交的点称为中轴点(pivot point)。实际的放大倍数还与样品到中轴点的工作距离W有关，现代电镜可以实现自动校正放大倍数。</p>
+</blockquote>
+<h4 id="_5">探测器收集信号</h4>
+<p>电子束作用到样品上会产生各种各样的信号，信号强度与扫描点位相关联即可得到图像。最常用的信号是secondary electron二次电子SE和backscattered electron背散射电子BSE。标准Everhart-Thornley（E-T）探测器两种信号都能收集。</p>
+<p>在探测器前的收集屏上施加正偏压可以同时收集到SE和BSE，施加负偏压则可以收集到纯BSE信号，这是由于SE的能量较低，会被挡出。电子由闪烁计数器或光电倍增管转成电信号，传给下一级系统。</p>
+<h4 id="_6">相机与计算机系统</h4>
+<p>（都什么年代了，还在用传统SEM）</p>
+<h4 id="_7">操作控制</h4>
+<ul>
+<li>控制电子枪的加速电压和电流强度</li>
+<li>控制聚光镜，决定电子束的强度和最小束斑尺寸</li>
+<li>控制物镜在样品上对焦</li>
+<li>调整图像的衬度、亮度</li>
+</ul>
+<h3 id="sem_1">SEM成像模式</h3>
+<p>SEM提供多种成像模式，以适应不同信息。主要的四个参数：</p>
+<ul>
+<li>束斑尺寸 <span class="arithmatex">\(d_p\)</span>：对应分辨率模式resolution mode</li>
+<li>束斑电流 <span class="arithmatex">\(i_p\)</span>：对应高电流模式high-current mode</li>
+<li>束斑会聚角 <span class="arithmatex">\(\alpha_p\)</span>：对应焦深模式depth-of-focus mode</li>
+<li>加速电压 <span class="arithmatex">\(V_0\)</span>：对应低压模式low-voltage mode</li>
+</ul>
+<p><img alt="image-20240306172525431" src="../2-SEM-and-its-modes-of-operation-img/image-20240306172525431.png" width="100" /></p>
+<h4 id="_8">分辨率模式</h4>
+<p>束斑尺寸需要足够小以确保高分辨率，为获得足够的衬度，需要相应增大电流。为获得样品表面细节，束斑尺寸应与其尺度相当。分辨率模式只在高倍下（10000x以上）有意义。</p>
+<h4 id="_9">高电流模式</h4>
+<p>受噪声影响，样品的某些特征有时即便采用小束斑也无法得到良好衬度，此时增大电流以获得更高信号强度，从而获得更好的衬度。</p>
+<p>另外，当需要收集X射线信号时，往往也需要增大电流以提高X射线信号强度。</p>
+<h4 id="_10">焦深模式</h4>
+<p>会聚角越小，焦深越好。小会聚角有利于不同深度样品的观察。</p>
+<blockquote>
+<p>这个是景深吧，为啥写的是depth of focus</p>
+</blockquote>
+<h4 id="_11">低电压模式</h4>
+<p>低电压（&lt; 5 kV）下，电子束与样品作用的范围基本限于近表面区域。因此低电压图像能获得更多的表面细节，相比之下高电压（15-30 kV）图像包含了样品内部信息</p>
+<h3 id="_12">为什么需要了解电子光学</h3>
+<blockquote>
+<p>不如说是：为什么需要了解以上几种模式的优点，难道我们不能直接把电镜设置成同时具备以上所有优点吗？</p>
+</blockquote>
+<p>以上参数的设置有些是互斥的。例如：小束斑和小会聚角不可避免地会降低电流；低电压下，束斑尺寸增大，电流也会降低。因此，我们需要了解各项参数、模式的意义及其对应的使用条件，从而灵活选择操作模式，获得更好的电镜照片。</p>
+<h2 id="_13">电子枪</h2>
+<p>电子枪为电镜提供能量可变的稳定束流。</p>
+<ul>
+<li><strong>热发射枪</strong>：钨灯丝、LaB6灯丝</li>
+<li><strong>场发射枪</strong>：冷场发射、热场发射、Schottky场发射</li>
+</ul>
+<h3 id="_14">发夹式钨电子枪</h3>
+<p>由以下三部分构成</p>
+<ul>
+<li>钨灯丝阴极</li>
+<li>控制极Wehnelt</li>
+<li>阳极</li>
+</ul>
+<p>电压为阴极阳极的电位差，在0.1~30kV范围内可调。阳极接地，控制极施加负偏压（比阴极还负一点点），用于聚焦电子束。</p>
+<p><img alt="image-20240312111001044" src="../2-SEM-and-its-modes-of-operation-img/image-20240312111001044.png" width="500" /></p>
+<h4 id="filament">灯丝Filament</h4>
+<p>（尽管钨灯丝已经有70多年的历史~~算到现在应该更久了吧~~，但还在用）</p>
+<p>灯丝直径约为100 um，弯折成像发夹的V形，针尖半径约100 um。</p>
+<p>灯丝处于白热状态时产生明显束流，为此为灯丝施加电流，加热到2000-2700K。电子束在针尖100×150 um的区域产生。</p>
+<h4 id="grid-cap">控制极 Grid Cap</h4>
+<p>又称为Wehnelt cylinder。电子束在灯丝尖端产生时成锥面放射，在控制极负偏压作用下会聚。</p>
+<h4 id="anode">阳极 Anode</h4>
+<p>阳极开孔，容许一部分的电子通过。</p>
+<h4 id="_15">发射电流与电子束流</h4>
+<ul>
+<li>
+<p>发射电流emission current是从灯丝产生的全部稳定电流；</p>
+</li>
+<li>
+<p>电子束流beam current为离开电子枪、进入镜筒的电流；</p>
+</li>
+<li>束斑电流probe current为经过透镜、光阑，最终落到样品上的电流。</li>
+</ul>
+<h4 id="_16">电子枪的控制</h4>
+<p>为保证束斑电流的稳定性，需要将灯丝电流加到<strong>饱和</strong>，以使束流受灯丝电流的影响较小。另外，处于饱和状态时，电子束均从灯丝的尖端发出，束斑的尺寸最小。</p>
+<p><img alt="image-20240312151308032" src="../2-SEM-and-its-modes-of-operation-img/image-20240312151308032.png" /></p>
+<h3 id="_17">电子枪的性质</h3>
+<p>主要包括以下几项：</p>
+<ul>
+<li>发射电流强度</li>
+<li>亮度</li>
+<li>寿命</li>
+<li>源尺寸</li>
+<li>能量分布</li>
+<li>稳定性</li>
+</ul>
+<p>其中，亮度最为重要，关乎图像质量，尤其是在高倍下。</p>
+<h4 id="_18">发射电流</h4>
+<p>钨灯丝的发射电流约为100uA，场发射枪的发射电流约为10-30uA。但由于发射电流只有一部分进入镜筒，其余被阳极光阑挡住，加之后续的透镜、光阑都会影响实际作用的电流强度，因此该指标不能很好地评估电子枪性能。</p>
+<h4 id="_19">亮度</h4>
+<p>电子光学亮度<span class="arithmatex">\(\beta\)</span>由单位面积单位立体角上的电流强度定义：</p>
+<div class="arithmatex">\[
+\beta = \frac{\text{current}}{\text{area}\cdot\text{solid angle}}
+= \frac{i_p}{\left(\frac{\pi d_p^2}{4}\right)\cdot\pi\alpha_p^2}
+= \frac{4i_p}{\pi^2\alpha_p^2d_p^2}
+\]</div>
+<blockquote>
+<p><span class="arithmatex">\(i_p\)</span>：束斑电流</p>
+<p><span class="arithmatex">\(\alpha_p\)</span>：束流会聚角</p>
+<p><span class="arithmatex">\(d_p\)</span>：束斑尺寸（直径）</p>
+</blockquote>
+<p>亮度可以通过实验测算。由于透镜的像差，测得的亮度低于实际亮度。通常，电子枪的亮度与加速电压成线性关系。</p>
+<h4 id="_20">寿命</h4>
+<p>热发射枪会烧断。</p>
+<h4 id="_21">光源大小、能量分布、稳定性</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>钨灯丝</th>
+<th>LaB6</th>
+<th>场发射</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>光源大小<span class="arithmatex">\(d_0\)</span></td>
+<td>50 um</td>
+<td>5 um</td>
+<td>5-25 nm</td>
+</tr>
+<tr>
+<td>能量分布<span class="arithmatex">\(\Delta E\)</span></td>
+<td>3.0 eV</td>
+<td>1.5 eV</td>
+<td>0.3-0.7 eV</td>
+</tr>
+</tbody>
+</table>
+<p>关于稳定性，Schottky场发射枪最好，热发射枪次之，冷场发射最差。</p>
+<h4 id="_22">提升电子枪性能</h4>
+<p>需要在不降低束斑电流的同时减小束斑尺寸，即提升电子枪的亮度。</p>
+<ul>
+<li>换灯丝LaB6</li>
+<li>改用场发射</li>
+</ul>
+<h3 id="lab6">LaB6电子枪</h3>
+<blockquote>
+<p>感觉原理上差不多，就是把W灯丝换成LaB6晶体。比钨灯丝贵，但更好用。</p>
+</blockquote>
+<ul>
+<li>5-10倍亮度，更长寿命<ul>
+<li>功函数低</li>
+</ul>
+</li>
+<li>直径100 um、长0.5 mm的小单晶</li>
+<li>用石墨或铼作为电阻加热</li>
+<li>针尖直径约为1um</li>
+<li>需要10e-4以下的真空，因此需要离子泵</li>
+<li>20 keV下亮度在5e5~5e6 A/cm2 sr之间，取决于针尖尖锐程度。越尖越亮，也越容易坏。</li>
+<li>虽然比钨灯丝贵，但也比钨灯丝耐用。</li>
+<li>LaB6没有饱和点，一般是手动缓慢升温至灯丝像形成良好的盘状。</li>
+<li>LaB6容易污染，一般缓慢升温自清洁。厂商建议不用的时候也保持低温运行以减小热冲击，提高真空度，延长寿命。</li>
+</ul>
+<h3 id="_23">场发射枪</h3>
+<p>热发射枪利用温度令电子克服材料的功函数，场发射枪则主要利用外加电场。热发射枪便宜、真空要求低，但同时也存在亮度低、寿命短、能量波动大等问题。场发射枪可以解决这些问题。</p>
+<p>场发射枪的针尖约100 nm，通常焊在钨灯丝上，电流密度可达1e5 A/cm2，相比之下热发射枪光源的电流密度仅约3 A/cm2。</p>
+<p><img alt="image-20240312172115544" src="../2-SEM-and-its-modes-of-operation-img/image-20240312172115544.png" /></p>
+<p>场发射枪包含2类。</p>
+<ul>
+<li>
+<p>冷场发射（CFE）</p>
+<p>只依赖电场令电子枪发射电子。产生电子的区域直径仅有几纳米，角度范围也较小。尽管总电流较小（1-10 uA），但光源亮度大，20kV达1e8 A/cm2 sr。</p>
+<p>电子枪有2个阳极。第一个阳极负责产生电子，第二个阳极负责加速电子。第二个阳极与阴极的电压才是加速电压的大小。第二阳极接地。 <span class="arithmatex">\(V_1/V_0\)</span> 决定电子枪的焦点，可以电脑控制。</p>
+<p>冷场发射枪要求阴极针尖表面原子级洁净，1e-5 Pa级别的真空仍然会有气体分子吸附，需要1e-8~1e-9级别。气体吸附会影响电子发射。使用针尖前将针尖加热到约2500 K以清洁表面，但会对针尖形成损耗，大约每天1次。总体上针尖具有很长的寿命。</p>
+</li>
+<li>
+<p>Schottky场发射（SFE）与热场发射（TFE）</p>
+<p>TFE与CFE类似，区别仅在温度。甚至可以降温当CFE用。升温有利于针尖洁净，降低了真空要求，提升了稳定性。（但同时也降低了使用寿命）</p>
+<p>SFE在针尖表面覆盖低功函数的材料。因此，尽管SFE是热发射，其亮度和电流密度能与CFE相匹敌。灯丝约12~15个月更换一次，SFE对真空度要求不如CFE，但高真空有利于提高稳定性，防止ZrO2阴极中毒，增加亮度。</p>
+<p>TFE光源大小与CFE相当，但SFE光源略大（因为针尖大）。SFE由于温度高，能量波动大于CFE。SFE优点在于电流输出高，连续工作时间长，稳定性好。</p>
+</li>
+</ul>
+<h2 id="_24">电磁透镜系统</h2>
+<p>透镜系统用于将交叉点处的电子光源进一步缩小到样品上的10 nm量级。透镜包括静电透镜与电磁透镜，电磁透镜的像差小，因此在SEM中基本都是电磁透镜。</p>
+<h3 id="_25">缩小电子束尺寸</h3>
+<p>一般而言有
+$$
+f\propto\frac{V_0}{(NI)^2}
+$$</p>
+<div class="arithmatex">\[
+\frac1f=\frac1p+\frac1q
+\]</div>
+<p>放大/缩小倍数为p与q的比值。</p>
+<h3 id="sem_2">SEM中的透镜系统</h3>
+<h4 id="condenser-lenses">会聚镜Condenser Lenses</h4>
+<p>用于缩小电子束，一般有1~3个，由系统统一控制，调整束斑尺寸spot   size。</p>
+<h4 id="objective-lenses">物镜Objective Lenses</h4>
+<p>将光束聚焦到样品上，顺便提供一点点的缩小</p>
+<p>物镜光阑有2种，分为Real Aperture与Virtual Aperture。前者位于透镜中，真空度较低，容易被污染；后者位于透镜外部，不易污染，且与前者等效。</p>
+<h3 id="_26">透镜控制</h3>
+<p><img alt="image-20240314153348300" src="../2-SEM-and-its-modes-of-operation-img/image-20240314153348300.png" /></p>
+<p>可供操作者调整的仪器参数主要为：</p>
+<ul>
+<li>物镜光阑大小</li>
+<li>样品高度<span class="arithmatex">\(z\)</span></li>
+<li>聚光镜C1电流</li>
+</ul>
+<h4 id="_27">光阑尺寸的影响</h4>
+<p>物镜光阑将会聚镜会聚后、发散角为<span class="arithmatex">\(\alpha_1\)</span>的电子束限制在<span class="arithmatex">\(\alpha_a\)</span>内，再被物镜会聚。调节光阑尺寸的作用主要有以下三点：</p>
+<ul>
+<li>调整到最佳孔径角有利于降低像差的不利影响；</li>
+<li>调整图像的焦深</li>
+<li>调整最终束斑的电流，因为光阑隔除了光阑孔径角外的散射电子。</li>
+</ul>
+<h4 id="_28">工作距离的影响</h4>
+<p>工作距离的调整需要调整样品台高度<span class="arithmatex">\(z\)</span>，再重新对焦。工作距离的改变会连带影响一系列参数，包括（以增加工作距离W为例）：</p>
+<ul>
+<li>束斑尺寸d2增大，但束斑电流保持不变</li>
+<li>会聚角a2减小，获得更大的焦深</li>
+<li>（前文）增加扫描步长，减小了放大倍数</li>
+</ul>
+<p><img alt="image-20240314163946916" src="../2-SEM-and-its-modes-of-operation-img/image-20240314163946916.png" /></p>
+<h4 id="_29">聚光镜电流的影响</h4>
+<p><img alt="image-20240314164709331" src="../2-SEM-and-its-modes-of-operation-img/image-20240314164709331.png" /></p>
+<p>减小聚光镜电流导致：</p>
+<ul>
+<li>束斑尺寸增大</li>
+<li>束斑电流增大</li>
+</ul>
+<h3 id="_30">束斑大小与束斑电流的关系</h3>
+<div class="arithmatex">\[
+d_G=\sqrt{\frac{4i_p}{\beta\pi^2\alpha_p^2}}
+\]</div>
+<div class="arithmatex">\[
+i_p=\frac{\beta\pi^2\alpha_p^2d_G^2}{4}
+\]</div>
+<h3 id="_31">透镜像差</h3>
+<h4 id="_32">球差</h4>
+<div class="arithmatex">\[
+d_s=\frac12C_s\alpha^3
+\]</div>
+<h4 id="_33">光阑衍射效应</h4>
+<div class="arithmatex">\[
+d_d=\frac{0.61\lambda}{\alpha}
+\]</div>
+<h4 id="_34">色差</h4>
+<div class="arithmatex">\[
+d_c=C_c\alpha\frac{\Delta E}{E_0}
+\]</div>
+<h4 id="_35">像散</h4>
+<p>这个有消像散器解决</p>
+<h3 id="_36">束斑尺寸与电流（考虑像差）</h3>
+<div class="arithmatex">\[
+d_p=(d_G^2+d_s^2+d_d^2+d_c^2)^{\frac12}
+\]</div>
+<div class="arithmatex">\[
+d_{min}=KC_s^{1/4}\lambda^{3/4}\left(\frac{i_p}{\beta\lambda^2}+1\right)^{3/8}
+\]</div>
+<div class="arithmatex">\[
+i_{max}=\frac{3\pi^2}{16}\beta\frac{d_p^{8/3}}{C_s^{2/3}}
+\]</div>
+<h3 id="_37">不同操作模式下的调节</h3>
+<p>回顾上述三种参数调节：</p>
+<ul>
+<li><strong>光阑</strong>：增大光阑 → <span class="arithmatex">\(i_p\)</span>↑、<span class="arithmatex">\(\alpha_p\)</span>↑</li>
+<li><strong>工作距离</strong>：增大W → <span class="arithmatex">\(i_p\)</span>不变、<span class="arithmatex">\(d_p\)</span>↑、<span class="arithmatex">\(\alpha_p\)</span>↓</li>
+<li><strong>聚光镜</strong>：增大电流 → <span class="arithmatex">\(i_p\)</span>↓、<span class="arithmatex">\(d_p\)</span>↓、<span class="arithmatex">\(\alpha_p\)</span>↓</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年3月28日</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年3月28日</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:zhengsx19@mails.tsinghua.edu.cn">Weslie0803</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
